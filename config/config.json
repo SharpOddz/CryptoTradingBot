@@ -1,1 +1,10 @@
-
+{ "venue": { "live": "binance_us", "paper": "gemini_sandbox" }, "pairs_allowlist": ["BTCUSD",
+"ETHUSD", "SOLUSD"], "pair_scoring": { "enabled": true, "rebalance_utc_hour": 0,
+"max_pairs_active": 2, "switch_margin": 1.25, "min_24h_volume_usd": 50000000,
+"max_spread_bps": 4 }, "timeframes": { "signal": "5m", "gate": "15m", "context": "1h" },
+"risk": { "daily_loss_pct": 0.02, "risk_per_trade_pct": 0.004, "max_open_positions": 1,
+"max_open_orders": 3, "max_notional_pct": 0.75, "vol_targeting": { "enabled": true,
+"atr_period": 14, "min_size_usd": 5 } }, "execution": { "prefer_post_only": true,
+"entry_tif": "GTC", "max_queue_seconds": 20, "reprice_on_mid_move_bps": 2, "exit_style":
+"marketable_limit" }, "no_trade_gates": { "max_spread_bps": 5, "max_5m_vol_pct": 0.015,
+"min_fill_rate": 0.25 } }
